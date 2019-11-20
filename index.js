@@ -48,10 +48,6 @@ function watchForm(){
         event.preventDefault();
         const stateCode = $('#stateId').val();
         const maxResult = $('#park-limit').val();
-        if(stateCode.length != 2){
-            $('.container').append('<p id="bad-input" class="error-message">Your state code can only contain 2 letters!</p>');
-            return;
-        }
         console.log(stateCode);
         console.log(maxResult);
         getParks(stateCode, maxResult);

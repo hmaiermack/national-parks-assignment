@@ -13,8 +13,8 @@
         <h1>Github Repo Finder</h1>
 
         <form id="js-form">
-            <label for="search-term">2 letter state code</label>
-            <input type="text" name="search-term" id="stateId" required pattern="[A-Za-z]{2}">
+            <label for="search-term">2 letter state codes seperated by commas without spaces</label>
+            <input type="text" name="search-term" id="stateId" required>
             <label for="search-amount">Amount of results to display</label>
             <input type="number" name="search-amount" id="park-limit" required value="10">
             <input type="submit" value="List Parks">
